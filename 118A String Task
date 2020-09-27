@@ -1,0 +1,4 @@
+
+s=input()
+news=[i for i in s.lower() if i not in 'aoyeui']
+print('.'+'.'.join(news))
