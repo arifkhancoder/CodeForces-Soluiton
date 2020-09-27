@@ -1,0 +1,11 @@
+
+sum=0
+for i in range(int(input())):
+    string=input().split()
+    count=string.count('1')
+    if count==2:
+        sum+=1
+    if count==3:
+        sum+=1
+print(sum)
+
