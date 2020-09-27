@@ -1,0 +1,10 @@
+
+v=0
+for i in range(int(input())):
+    x = input()
+ 
+    if x=='++X' or x=='X++':
+        v=v+1
+    elif x=='--X' or x=='X--':
+        v=v-1
+print(v)
