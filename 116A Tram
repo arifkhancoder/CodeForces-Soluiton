@@ -1,0 +1,17 @@
+n = int(input())
+i_a = []
+input_array = []
+while n > 0:
+    array_list = list(map(int, input().split()))
+    input_array.append(array_list)
+    n = n - 1
+
+max_number = 0
+person_count = 0
+person=0
+for a in input_array:
+    person= person - a[0] + a[1]
+    if max_number<person:
+        max_number=person
+print(max_number)
+
