@@ -1,0 +1,5 @@
+s=input()
+if '0'*7 in s or 7*'1' in s:
+    print('YES')
+else:
+    print('NO')
