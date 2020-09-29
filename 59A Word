@@ -1,0 +1,7 @@
+s=input()
+lo=len([i for i in s if i.islower()])
+upper=abs(len(s)-lo)
+if lo==upper or lo>upper:
+	print(s.lower())
+else:
+	print(s.upper())
