@@ -1,0 +1,9 @@
+s=0
+prev=''
+for i in range(int(input())):
+    kk=input() 
+    if kk!=prev:
+        s+=1
+        prev=kk
+print(s)
+
