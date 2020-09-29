@@ -1,0 +1,10 @@
+f,h=map(int,input().split())
+count=0
+s=list(map(int,input().split()))
+for i in s:
+    if i>h:
+        count+=2
+    else:
+        count+=1
+
+print(count)
