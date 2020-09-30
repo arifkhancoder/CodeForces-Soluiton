@@ -1,0 +1,6 @@
+ans=0
+import math
+for i in range(int(input())):
+    n=int(input())
+    ans=math.ceil(n/2)-1
+    print(ans)
