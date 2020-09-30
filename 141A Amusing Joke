@@ -1,0 +1,11 @@
+import itertools
+g=input()
+h=input()
+p=input()
+guesthost=sorted(g+h)
+pile=sorted(p)
+check=[True if i==j else False for i,j in itertools.zip_longest(guesthost,pile)]
+if all(check)==True:
+    print('YES')
+else:
+    print('NO')
