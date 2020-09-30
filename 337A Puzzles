@@ -1,0 +1,23 @@
+n, m = map(int, input().split(' '))
+f = list(map(int, input().split(' ')))
+
+
+f.sort()
+
+puzzles_to_discard = m - n
+
+if puzzles_to_discard == 0:
+	# there are no puzzles to discard
+	least_possible_difference = f[-1] - f[0]
+else:
+	least_possible_difference = 999999
+	i = 0
+	while (i <= puzzles_to_discard):
+		difference_between_head_and_tail = f[n+i-1] - f[i]
+		if difference_between_head_and_tail < least_possible_difference:
+			least_possible_difference = difference_between_head_and_tail
+		i += 1
+
+
+
+print(least_possible_difference)
