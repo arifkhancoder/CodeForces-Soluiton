@@ -1,0 +1,17 @@
+N=int(input())
+Teams=[[0]*2]*N
+noofgames=0
+for i in range(N):
+    Teams[i]=input().split()
+host_player=[]
+guest_player=[]
+
+for i in range(N):
+    host_player=Teams[i]
+    for j in range(N):
+        if j!=i:
+            guest_player=Teams[j]
+            if host_player[0]==guest_player[1]:
+                noofgames+=1
+
+print(noofgames)
