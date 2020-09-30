@@ -1,0 +1,20 @@
+k = int(input())
+l = int(input())
+m = int(input())
+n = int(input())
+d = int(input())
+
+
+number_of_damaged_dragons = 0
+
+for dragon in range(1, d+1):
+    if (
+        0 == dragon % k
+        or 0 == dragon % l
+        or 0 == dragon % m
+        or 0 == dragon % n
+    ):
+        number_of_damaged_dragons += 1
+
+
+print(number_of_damaged_dragons)
