@@ -1,0 +1,10 @@
+f=list(input())
+s=list(input())
+str=''
+for i in range(0,len(f)):
+	if f[i]==s[i]:
+		str+='0'
+	else:
+		str+='1'
+print(str)
+
