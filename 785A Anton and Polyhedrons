@@ -1,0 +1,20 @@
+# Tetrahedron. Tetrahedron has 4 triangular faces.
+# Cube. Cube has 6 square faces.
+# Octahedron. Octahedron has 8 triangular faces.
+# Dodecahedron. Dodecahedron has 12 pentagonal faces.
+# Icosahedron. Icosahedron has 20 triangular faces
+sum=0
+for i in range(int(input())):
+    dict={'Tetrahedron':4,'Cube':6,'Octahedron':8,'Dodecahedron':12,'Icosahedron':20}
+    s=input()
+    if s=='Tetrahedron':
+        sum+=dict[s]
+    elif s=='Cube':
+        sum+=dict[s]
+    elif s=='Octahedron':
+        sum+=dict[s]
+    elif s=='Dodecahedron':
+        sum+=dict[s]
+    else:
+        sum+=dict[s]
+print(sum)
