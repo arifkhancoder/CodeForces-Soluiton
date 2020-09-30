@@ -1,0 +1,5 @@
+sitcks=input().split()
+if min(int(sitcks[0]),int(sitcks[1]))%2==0:
+    print('Malvika')
+else:
+    print('Akshat')
