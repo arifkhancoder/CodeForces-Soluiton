@@ -1,0 +1,8 @@
+import string
+list=list(string.ascii_lowercase)
+N=input()
+s=input()
+if len(set(s.lower()))>=len(list):
+    print('YES')
+else:
+    print('NO')
