@@ -1,0 +1,11 @@
+k,l=map(int,input().split())
+for i in range(1,k+1):
+    if i%4==2:
+        print('.'*(l-1)+'#')
+    elif i%4==0:
+        print('#' + '.' * (l - 1))
+    else:
+        print(l * '#')
+
+
+
